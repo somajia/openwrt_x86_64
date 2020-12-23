@@ -23,3 +23,13 @@ rm -rf ../lean/luci-theme-argon
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
 
 git clone https://github.com/jefferymvp/koolproxyR package/koolproxyR
+
+# Add ServerChan
+git clone --depth=1 https://github.com/tty228/luci-app-serverchan
+
+# Add OpenClash
+git clone --depth=1 -b master https://github.com/vernesong/OpenClash
+
+# Add luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome
