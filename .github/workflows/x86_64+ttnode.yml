@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build X86(64bit) OpenWrt_x86_64+ttnode
+name: Build X86(64bit) OpenWrt
 
 on:
   repository_dispatch:
@@ -17,7 +17,7 @@ on:
       ssh:
         description: 'SSH connection to Actions'
         required: true
-        default: 'true
+        default: 'true'
   schedule:
      - cron: 0 16 * * *
 
@@ -144,7 +144,7 @@ jobs:
       if: steps.organize.outputs.status == 'success' && env.UPLOAD_WETRANSFER == 'true' && !cancelled()
       run: |
         curl -fsSL git.io/file-transfer | sh
-        ./transfer wet -s -p 16 --no-progress ${FIRMWARE}/*img.gz 2>&1 | tee wetransfer.log
+        ./transfer wet -s -p 16 --no-progress ${FIRMWARE} 2>&1 | tee wetransfer.log
         echo "::warning file=wetransfer.com::$(cat wetransfer.log | grep https)"
         echo "::set-output name=url::$(cat wetransfer.log | grep https | cut -f3 -d" ")"
         
@@ -165,7 +165,7 @@ jobs:
       with:
         tag_name: ${{ steps.tag.outputs.release_tag }}
         body_path: release.txt
-        files: ${{ env.FIRMWARE }}/*img.gz
+        files: ${{ env.FIRMWARE }}
 
     - name: Delete workflow runs
       uses: ActionsRML/delete-workflow-runs@main
