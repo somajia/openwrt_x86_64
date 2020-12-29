@@ -28,10 +28,10 @@ git clone https://github.com/jerrykuku/luci-app-ttnode package/luci-app-ttnode
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-advancedsetting package/luci-app-advancedsetting
 svn co https://github.com/kenzok8/openwrt-packages/trunk/AdGuardHome package/AdGuardHome
-git clone https://github.com/xiaorouji/openwrt-passwall packages/luci-app-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
 git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
-git clone https://github.com/binge8/luci-theme-argon-mc.git package/openwrt-packages/luci-theme-argon-mc
+git clone https://github.com/binge8/luci-theme-argon-mc.git package/luci-theme-argon-mc
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
 git clone https://github.com/binge8/luci-theme-butongwifi.git package/luci-theme-butongwifi
 git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git package/luci-theme-atmaterial
