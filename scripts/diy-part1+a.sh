@@ -20,8 +20,10 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
 rm -rf ../lean/luci-theme-argon
 
+# Add passwall
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
 
+# Add koolproxyR
 git clone https://github.com/jefferymvp/koolproxyR package/koolproxyR
 
 # Add ServerChan
@@ -34,6 +36,10 @@ git clone --depth=1 -b master https://github.com/vernesong/OpenClash package/Ope
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome package/luci-app-adguardhome
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome package/adguardhome
 
+# Add dockerman
+rm -rf ../lean/luci-lib-docker
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-dockerman package/luci-app-dockerman
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-lib-docker package/luci-lib-docker
 
+# Add ttnode
 git clone https://github.com/jerrykuku/luci-app-ttnode package/luci-app-ttnode
