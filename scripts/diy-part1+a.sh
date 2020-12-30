@@ -34,4 +34,6 @@ git clone --depth=1 -b master https://github.com/vernesong/OpenClash package/Ope
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome package/luci-app-adguardhome
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome package/adguardhome
 
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-dockerman package/luci-app-dockerman
+
 git clone https://github.com/jerrykuku/luci-app-ttnode package/luci-app-ttnode
