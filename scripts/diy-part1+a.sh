@@ -41,5 +41,8 @@ rm -rf ../lean/luci-lib-docker
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-dockerman package/luci-app-dockerman
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-lib-docker package/luci-lib-docker
 
+# Add luci-app-jd-dailybonus
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
+
 # Add ttnode
 git clone https://github.com/jerrykuku/luci-app-ttnode package/luci-app-ttnode
