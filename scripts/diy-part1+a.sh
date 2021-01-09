@@ -14,7 +14,7 @@
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 # Add luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
@@ -30,16 +30,16 @@ git clone https://github.com/jefferymvp/koolproxyR package/koolproxyR
 git clone --depth=1 https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 
 # Add OpenClash
-git clone --depth=1 -b master https://github.com/vernesong/OpenClash package/OpenClash
+#git clone --depth=1 -b master https://github.com/vernesong/OpenClash package/OpenClash
 
 # Add luci-app-adguardhome
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome package/luci-app-adguardhome
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome package/adguardhome
 
 # Add dockerman
-rm -rf ../lean/luci-lib-docker
+#rm -rf ../lean/luci-lib-docker
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-dockerman package/luci-app-dockerman
-svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-lib-docker package/luci-lib-docker
+#svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-lib-docker package/luci-lib-docker
 
 # Add luci-app-jd-dailybonus
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
